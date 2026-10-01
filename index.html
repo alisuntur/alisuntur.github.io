@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ali Suntur — Data, backend ve kurumsal uygulamalar odağında geliştirici portföyü." />
+  <meta name="theme-color" content="#030711" />
+  <meta property="og:title" content="Ali Suntur | Data & Backend Developer" />
+  <meta property="og:description" content="YBS mezunu, Bilgisayar Mühendisliği yan dalı; data, backend, karar destek ve kurumsal uygulamalar." />
+  <title>Ali Suntur | Data & Backend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="data-space" aria-hidden="true"></canvas>
+  <div class="space-fog" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Ana sayfa"><span class="brand-mark">AS</span><span class="mono">ali@suntur</span></a>
+    <nav class="desktop-nav" aria-label="Ana navigasyon">
+      <a href="#about">Hakkımda</a><a href="#education">Eğitim</a><a href="#skills">Yetenekler</a><a href="#experience">Deneyim</a><a href="#projects">Projeler</a><a href="#certifications">Sertifikalar</a><a href="#contact">İletişim</a>
+    </nav>
+    <div class="header-actions">
+      <a class="status-pill" href="#contact"><span></span><b>Fırsatlara açığım</b></a>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false"><i></i><i></i><i></i></button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobil navigasyon">
+      <a href="#about">Hakkımda</a><a href="#education">Eğitim</a><a href="#skills">Yetenekler</a><a href="#experience">Deneyim</a><a href="#projects">Projeler</a><a href="#certifications">Sertifikalar</a><a href="#contact">İletişim</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="prompt">$</span> whoami</div>
+        <h1>Merhaba, ben <span class="gradient-text">Ali Suntur.</span><br><span class="typed-line"><span id="role-text">Data Analyst</span><span class="cursor">_</span></span></h1>
+        <div class="identity-loop" aria-label="Kimlik özeti"><span>MIS Graduate · Computer Engineering Minor · Data & Backend Developer</span></div>
+        <p class="hero-lead">İş problemlerini veri, yazılım ve sistem düşüncesiyle çözüme dönüştüren; analitik taraftan backend geliştirmeye kadar uçtan uca ürün geliştirmeyi seven bir geliştiriciyim.</p>
+        <div class="hero-actions"><a class="primary-btn" href="#projects">Projeleri keşfet ↘</a><a class="secondary-btn" href="assets/Ali_Suntur_CV.pdf" target="_blank" rel="noopener">CV görüntüle ↗</a></div>
+        <div class="hero-meta mono"><span><i class="dot"></i> Antalya, Türkiye</span><span>focus: <b>data · backend · enterprise · decision support</b></span></div>
+      </div>
+
+      <div class="hero-terminal reveal">
+        <div class="terminal-window glass-card tilt-card">
+          <div class="terminal-topbar"><div class="traffic"><span></span><span></span><span></span></div><div>ali@suntur: ~/portfolio</div><div class="terminal-status">● LIVE</div></div>
+          <div class="terminal-body">
+            <div><span class="term-user">ali@suntur</span>:<span class="term-path">~/portfolio</span>$ cat profile.json</div>
+            <pre class="json"><span>{</span>
+  <span class="json-key">"degree"</span>: <span class="json-string">"Management Information Systems"</span>,
+  <span class="json-key">"minor"</span>: <span class="json-string">"Computer Engineering"</span>,
+  <span class="json-key">"gpa"</span>: <span class="json-number">3.32</span>,
+  <span class="json-key">"focus"</span>: [<span class="json-string">"Data"</span>, <span class="json-string">"Backend"</span>, <span class="json-string">"Enterprise"</span>],
+  <span class="json-key">"available"</span>: <span class="json-bool">true</span>
+<span>}</span></pre>
+            <div><span class="term-user">ali@suntur</span>:<span class="term-path">~/portfolio</span>$ <span id="terminal-command"></span><span class="terminal-caret">█</span></div>
+            <div id="terminal-output" class="terminal-output"></div>
+          </div>
+        </div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="floating-chip chip-a">POST /api/analyze → 200</div><div class="floating-chip chip-b">R² ≈ 0.92</div><div class="floating-chip chip-c">docker compose up</div>
+      </div>
+    </section>
+
+    <section class="signal-strip" aria-hidden="true"><div><span>PYTHON</span><b>✦</b><span>C#</span><b>✦</b><span>ASP.NET CORE</span><b>✦</b><span>FASTAPI</span><b>✦</b><span>REACT</span><b>✦</b><span>POSTGRESQL</span><b>✦</b><span>ML</span><b>✦</b><span>DOCKER</span><b>✦</b><span>PYTHON</span><b>✦</b><span>C#</span><b>✦</b><span>ASP.NET CORE</span></div></section>
+
+    <section id="about" class="section-shell content-section">
+      <div class="section-kicker reveal">01 // about_me</div>
+      <div class="about-grid">
+        <div class="section-heading reveal"><h2>Kod yazmaktan çok, <span class="gradient-text">problemi doğru çözmeye</span> odaklanıyorum.</h2></div>
+        <div class="about-copy reveal">
+          <p>Yönetim Bilişim Sistemleri eğitimim bana işletme süreçlerini, veriyle karar vermeyi ve teknolojiyi iş hedefleriyle birlikte düşünmeyi öğretti. Bilgisayar Mühendisliği yan dalı ise bu bakışı daha teknik bir temele taşıdı.</p>
+          <p>Backend servisleri, veri analitiği, karar destek sistemleri, web uygulamaları ve kurumsal süreçler üzerinde çalışırken “neden yapıyoruz?” sorusunu “nasıl yapıyoruz?” kadar önemsiyorum. Havalimanı teknoloji ortamındaki iki farklı stajım sayesinde hem kurumsal BT operasyonlarını hem de teknik otomasyon / bakım süreçlerini sahada görme fırsatı buldum.</p>
+          <p>Şu anda özellikle Data Analyst, Business Analyst, Backend Developer ve Enterprise Applications eksenindeki rollere odaklanıyorum; uzun vadede veri odaklı akıllı sistemler ve karar destek araştırmaları geliştirmek istiyorum.</p>
+          <div class="about-tags"><span>YBS Mezunu · 3.32/4.00</span><span>Bilgisayar Müh. Yan Dal</span><span>2× Havalimanı Teknoloji Deneyimi</span><span>Data + Backend</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section-shell content-section">
+      <div class="section-kicker reveal">02 // education.stack</div>
+      <div class="section-heading wide reveal"><h2>Eğitim altyapım</h2><p>Ders listesini yalnızca transcript olarak değil, projelerimde kullandığım teknik ve iş altyapısına dönüşen bir öğrenme haritası olarak görüyorum.</p></div>
+      <div class="education-hero glass-card reveal">
+        <div><span class="mono mini-label">PAMUKKALE UNIVERSITY · 2022—2026</span><h3>Yönetim Bilişim Sistemleri</h3><p>3.32 / 4.00 · Onur derecesi</p></div>
+        <div><span class="mono mini-label">MINOR PROGRAM</span><h3>Bilgisayar Mühendisliği</h3><p>2.56 / 4.00 · Teknik temel ve bilgisayar bilimi perspektifi</p></div>
+      </div>
+      <div class="course-grid">
+        <article class="course-card glass-card reveal"><div class="course-icon">{ }</div><h3>Yazılım & Sistem Geliştirme</h3><p>Programlamaya Giriş, Nesneye Yönelik Programlama, Veri Yapıları ve Algoritmalar, Web Tabanlı Teknolojiler ve Yazılım Mühendisliği dersleri; web, backend ve mobil projelerimin teknik temelini oluşturdu.</p><div class="course-list"><span>Görsel Programlama</span><span>Mobil Programlama</span><span>Bulut Bilişim</span><span>Temel Bilgisayar Bilimleri</span><span>Oyun Tabanlı Blok Programlama</span></div></article>
+        <article class="course-card glass-card reveal"><div class="course-icon">▦</div><h3>Veri, İstatistik & Analitik</h3><p>Betimleyici İstatistik ve Olasılık, Çıkarımsal İstatistik, Veritabanı Yönetimi ve Modelleme ile Veri Madenciliği dersleri; veri analizi, tahmin, KPI ve modelleme çalışmalarımın analitik tabanını oluşturdu.</p><div class="course-list"><span>Araştırma Yöntemleri</span><span>Karma Yöntem Araştırmaları</span><span>İleri Ofis Uygulamaları</span><span>Matematik I</span><span>Matematik II</span></div></article>
+        <article class="course-card glass-card reveal"><div class="course-icon">↳</div><h3>Karar Destek & Optimizasyon</h3><p>Karar Destek Sistemleri, Optimizasyon Teknikleri ve Vaka Analizi; AHP, tahmin, çok kriterli değerlendirme ve iş problemlerini ölçülebilir modellere dönüştürme yaklaşımımı geliştirdi.</p><div class="course-list"><span>Stratejik Planlama ve Yönetim</span><span>Bilişim Sistemlerinde Güncel Konular</span><span>Lisans Tezi I</span><span>Lisans Tezi II</span><span>Yazılım Proje Yönetimi</span></div></article>
+        <article class="course-card glass-card reveal"><div class="course-icon">ERP</div><h3>İşletme & Kurumsal Sistemler</h3><p>Kurumsal Kaynak Planlama Sistemleri, Uygulamalı E-Ticaret, İşletme Yönetimi, Genel Muhasebe ve Finansal Yönetim; teknik çözümün arkasındaki süreçleri, kullanıcı ihtiyacını ve iş tarafını birlikte okumamı sağladı.</p><div class="course-list"><span>Sistem Analizi ve Tasarımı</span><span>E-İşletmecilik</span><span>E-Müşteri İlişkileri Yönetimi</span><span>Pazarlama</span><span>İnternette Pazarlama I</span><span>İnternette Pazarlama II</span></div></article>
+      </div>
+      <div class="education-note reveal"><span class="prompt">$</span> Bu altyapının çıktısı: <b>iş ihtiyacını anlayıp veri modeline, API'ye, kullanıcı arayüzüne ve ölçülebilir karar desteğine dönüştürebilmek.</b></div>
+    </section>
+
+    <section id="skills" class="section-shell content-section">
+      <div class="section-kicker reveal">03 // skills.runtime</div>
+      <div class="section-heading wide reveal"><h2>Yetenekler — ama yüzde barı yok.</h2><p>Her alanı o teknolojinin karakterine uygun küçük bir arayüzle gösteriyorum. Öğrenme aşamasındaki araçları da ayrı tutuyorum.</p></div>
+      <div class="skills-grid">
+        <article class="skill-card code-skill glass-card reveal"><header><span>languages.ts</span><b>LANGUAGES</b></header><pre id="language-code"><span class="kw">const</span> stack = [
+  <span class="str">"Python"</span>,
+  <span class="str">"C#"</span>,
+  <span class="str">"JavaScript / TypeScript"</span>,
+  <span class="str">"SQL"</span>,
+  <span class="str">"Dart"</span>
+];</pre></article>
+        <article class="skill-card backend-skill glass-card reveal"><header><span>api.log</span><b>BACKEND</b></header><div class="api-log"><p><i>GET</i> /api/profile <b>200</b></p><p><i>POST</i> /api/analysis <b>201</b></p><p><i>AUTH</i> JWT / RBAC <b>OK</b></p><p><i>ORM</i> EF Core / TypeORM <b>READY</b></p></div><div class="tag-row"><span>ASP.NET Core</span><span>FastAPI</span><span>Django</span><span>NestJS</span><span>REST</span></div></article>
+        <article class="skill-card frontend-skill glass-card reveal"><header><span>ui.preview</span><b>FRONTEND</b></header><div class="ui-preview"><div class="ui-sidebar"><i></i><i></i><i></i></div><div class="ui-content"><div class="ui-bar"></div><div class="ui-panels"><i></i><i></i><i></i></div><div class="ui-chart"></div></div></div><div class="tag-row"><span>React</span><span>TypeScript</span><span>Vite</span><span>Tailwind</span><span>Flutter</span></div></article>
+        <article class="skill-card db-skill glass-card reveal"><header><span>psql</span><b>DATABASE</b></header><pre class="sql"><span class="sql-prompt">db=&gt;</span> SELECT system, usage
+FROM skills
+ORDER BY experience DESC;
+
+<span class="sql-result">PostgreSQL | primary
+SQL Server | familiar
+SQLite     | projects
+Supabase   | projects
+4 rows</span></pre></article>
+        <article class="skill-card data-skill glass-card reveal"><header><span>analysis.ipynb</span><b>DATA / ML</b></header><div class="data-frame"><div><span>feature</span><span>importance</span></div><p><b>weather</b><i style="--v:88%"></i></p><p><b>history</b><i style="--v:74%"></i></p><p><b>region</b><i style="--v:61%"></i></p></div><div class="tag-row"><span>Pandas</span><span>scikit-learn</span><span>XGBoost</span><span>Plotly</span><span>Recharts</span><span>AHP</span></div></article>
+        <article class="skill-card infra-skill glass-card reveal"><header><span>compose.yml</span><b>TOOLS / INFRA</b></header><div class="infra-flow"><span>Git</span><i>→</i><span>Docker</span><i>→</i><span>API</span><i>→</i><span>PostgreSQL</span></div><div class="tag-row"><span>Docker</span><span>Git / GitHub</span><span>Swagger</span><span>Dokploy</span><span>Postman</span></div></article>
+      </div>
+      <div class="learning-strip reveal"><b>Şu an geliştiriyorum</b><span>Power BI</span><span>AWS</span><span>Advanced ASP.NET Core</span><span>Machine Learning</span><span>English / YDS</span></div>
+    </section>
+
+    <section id="experience" class="section-shell content-section">
+      <div class="section-kicker reveal">04 // experience.log</div><div class="section-heading wide reveal"><h2>Sahadan yazılıma</h2><p>Kurumsal BT operasyonları ve teknik otomasyon ortamı, geliştirdiğim sistemlerde “gerçek kullanım” tarafını daha iyi görmemi sağladı.</p></div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><div class="timeline-node"></div><div class="timeline-date mono">AĞU 2026 — EYL 2026</div><div class="timeline-card glass-card"><span class="job-type">Staj</span><h3>Technical Automation Intern</h3><p>Fraport TAV Antalya Airport</p><p>Bina otomasyonu, enerji merkezi, SCADA, jeneratör ve UPS altyapılarını gözlemledim. Ardından arıza, bakım, test planı, vardiya devir teslimi ve audit log süreçlerini modelleyen web tabanlı bir operasyon/bakım yönetim sistemi geliştirdim.</p><div class="privacy-note">Portföyde gösterilen proje; şirketin gerçek üretim verisini, gizli sistem ayrıntılarını veya kurumsal kayıtlarını içermez. Arayüz ve örnek içerikler demo / temsili veriyle hazırlanmıştır.</div><div class="tag-row"><span>.NET 9</span><span>React 19</span><span>PostgreSQL</span><span>Docker</span><span>SCADA gözlemi</span></div></div></article>
+        <article class="timeline-item reveal"><div class="timeline-node"></div><div class="timeline-date mono">AĞU 2024 — EYL 2024</div><div class="timeline-card glass-card"><span class="job-type">Staj</span><h3>IT Support Intern</h3><p>Fraport TAV Antalya Airport</p><p>Windows kurulumu, kullanıcı desteği, yazıcı/donanım operasyonları ve servis masası süreçlerinde görev alarak kurumsal BT operasyonlarının günlük işleyişini gözlemledim.</p><div class="tag-row"><span>IT Support</span><span>Windows</span><span>Hardware</span><span>Service Desk</span></div></div></article>
+      </div>
+    </section>
+
+    <section id="constellation" class="section-shell content-section">
+      <div class="section-kicker reveal">05 // knowledge_graph</div><div class="section-heading wide reveal"><h2>Teknoloji takımyıldızı</h2><p>Nodelar rastgele değil; veri → servis → veritabanı → arayüz → dağıtım akışını temsil ediyor. Bir node'a tıklayarak o alanda kullandığım detayları görebilirsin.</p></div>
+      <div class="constellation glass-card reveal">
+        <div class="constellation-top mono"><span>knowledge-graph://ali-suntur</span><span id="node-status">NODE: DATA</span></div>
+        <div class="constellation-body">
+          <div class="constellation-canvas" id="constellation-canvas"><svg viewBox="0 0 1000 430" preserveAspectRatio="none" aria-hidden="true"><g class="lines"><path d="M110 205 C210 90 300 95 390 145"/><path d="M390 145 C480 175 530 200 600 225"/><path d="M600 225 C695 200 750 140 835 120"/><path d="M600 225 C720 270 770 320 860 325"/><path d="M390 145 C420 255 430 315 500 350"/><path d="M500 350 C625 365 760 345 860 325"/></g></svg></div>
+          <aside id="node-panel" class="node-panel"><span class="mini-label">SELECTED NODE</span><h3>Data & Analytics</h3><p>Veriyi temizleme, KPI tasarlama, görselleştirme ve karar problemine dönüştürme.</p><div class="tag-row"><span>Pandas</span><span>Plotly</span><span>Statistics</span><span>KPI</span></div></aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-shell content-section projects-section">
+      <div class="section-kicker reveal">06 // projects</div><div class="section-heading wide reveal"><h2>Seçili projeler</h2><p>Veri analitiği, backend, karar destek, kurumsal uygulamalar ve mobil geliştirme tarafındaki çalışmalarım. Her projede teknik yapı, kullanılan teknolojiler, ekran görüntüleri ve paylaşılabiliyorsa kaynak kod bağlantısı bulunuyor.</p></div>
+      <div id="project-grid" class="project-grid"></div>
+    </section>
+
+    <section id="certifications" class="section-shell content-section">
+      <div class="section-kicker reveal">07 // credentials</div><div class="section-heading wide reveal"><h2>Sertifikalar & sürekli öğrenme</h2><p>Kurumsal uygulama, proje yönetimi, güvenlik ve teknoloji tarafında eğitimi proje üretimiyle birlikte sürdürüyorum.</p></div>
+      <div class="cert-grid">
+        <article class="cert-card glass-card reveal"><span>01</span><h3>Google Project Management</h3><p>Coursera · 2024</p><small>Proje planlama, paydaş yönetimi ve uygulama süreçleri.</small></article>
+        <article class="cert-card glass-card reveal"><span>02</span><h3>Logo Netsis Wings Entegre</h3><p>Logo Yazılım</p><small>ERP uygulamaları ve kurumsal kaynak planlama altyapısı.</small></article>
+        <article class="cert-card glass-card reveal"><span>03</span><h3>AI Eklentili App Jam</h3><p>Oyun ve Uygulama Akademisi · 2024</p><small>Takım çalışması, ürün geliştirme ve mobil uygulama deneyimi.</small></article>
+        <article class="cert-card glass-card reveal"><span>04</span><h3>Güvenlik Bilinci</h3><p>Kurumsal eğitim</p><small>Bilgi güvenliği farkındalığı ve güvenli çalışma pratikleri.</small></article>
+        <article class="cert-card glass-card reveal learning"><span>→</span><h3>AWS Skill Builder</h3><p>Aktif öğrenme</p><small>Cloud temelleri, AWS servisleri ve bulut mimarileri üzerine devam eden öğrenme yolu.</small></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section-shell content-section">
+      <div class="contact-panel reveal">
+        <p class="contact-command mono">$ ./next-opportunity --status=open</p>
+        <h2>Yeni bir ekipte <span class="gradient-text">üretmeye hazırım.</span></h2>
+        <p>Data Analyst, Business Analyst, Backend Developer ve Enterprise Applications rollerinde; iş süreçlerini anlayıp bunu veri ve yazılımla çözüme dönüştürebileceğim fırsatlarla ilgileniyorum. Proje iş birlikleri için de iletişime geçebilirsin.</p>
+        <div class="hero-actions"><a class="primary-btn" href="mailto:sunturali07@gmail.com">E-posta gönder ↗</a><a class="secondary-btn" href="https://www.linkedin.com/in/alisuntur" target="_blank" rel="noopener">LinkedIn ↗</a><a class="secondary-btn" href="https://github.com/alisuntur" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell"><span>© 2026 Ali Suntur</span><span class="mono">built with HTML · CSS · JavaScript // static by design</span></footer>
+
+  <div id="project-modal" class="project-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-window" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="terminal-topbar editor-topbar"><div class="traffic"><span></span><span></span><span></span></div><div class="editor-file" id="modal-file">README.md</div><button class="modal-close" data-close-modal aria-label="Kapat">×</button></div>
+      <div class="editor-shell"><aside class="editor-sidebar"><div class="editor-brand">EXPLORER</div><button class="tab-btn active" data-tab="readme">README.md</button><button class="tab-btn" data-tab="architecture">architecture.json</button><button class="tab-btn" data-tab="gallery">screens/</button><button class="tab-btn" data-tab="code">sample.code</button></aside><main class="editor-main"><div class="editor-tabs"><span id="tab-title">README.md</span></div><div id="editor-content" class="editor-content"></div></main></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
